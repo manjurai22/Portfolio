@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from portfolio_app.models import Project
 from portfolio_app.forms import ProjectForm
 # Create your views here.
-def protfolio(request):
+def portfolio(request):
     projects = Project.objects.all()
     return render(request, "project_list.html", {"projects":projects})
 
